@@ -1,9 +1,19 @@
-const textInput = {
-    username: document.getElementById('username').value,
-    title: document.getElementById('title').value,
-    content: document.getElementById('content').value,
-};
+const usernameInput = document.querySelector('#username');
+const titleInput = document.querySelector('#title');
+const contentInput = document.querySelector('#content');
+const submitButton = document.querySelector('#submit');
 
-const textInputJSON = JSON.stringify(textInput);
+submitButton.addEventListener('click', function (event) {
+event.preventDefault();
 
-localStorage.setItem('textInput', textInputJSON);
+const userInputs = JSON.parse(localStorage.getItem('userInputs')) || [];
+
+const userInput = {
+    username: usernameInput.value.trim(),
+    title: titleInput.value.trim(), 
+    content: contentInput.value.trim(), 
+}
+userInputs.push(userInput);
+
+localStorage.setItem('userInputs', JSON.stringify(userInputs));
+});
