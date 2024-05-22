@@ -3,16 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/blog.css">
     <title>Blog</title>
 </head>
 <body>
+    <div class ="container dark">
     <header>My First Blog</header>
     <button>Back</button>
+    <div class="row toggle">
+        <div class="col">
+    <p>Dark Mode</p>
+        </div>
+    <label class="switch col">
+    <input type="checkbox" id="theme-switcher">
+    <span class="slider round"></span>
+    </label>
+    <div class="col">
+    <p>Light Mode</p>
+    </div>
+    </div>
+
+
+    </div>
+
 </body>
 <footer>
     <p>My Work</p>
     <nav>
         <a href="https://bryson987081.github.io/portfolio-challange/">My Portfolio</a>
     </nav>
+    <script src="./assets/js/blog.js"></script>
 </footer>
 </html>
