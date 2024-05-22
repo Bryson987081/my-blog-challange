@@ -9,6 +9,9 @@ msgDiv.textContent = message;
 msgDiv.setAttribute('class', type);
 }
 
+ function redirectToBlogPage () {
+    window.location.href = 'blog.html';
+}
 submitButton.addEventListener('click', function (event) {
 event.preventDefault();
 
@@ -30,9 +33,8 @@ if (username === ''){
     displayMessage('error', 'Title cannot be blank');
 } else if (content === ''){
     displayMessage('error', 'Content cannot be blank');
-} else {
-
-
+} else {redirectToBlogPage ()
+    
 }
 
 userInputs.push(userInput);
