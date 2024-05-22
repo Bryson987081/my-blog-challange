@@ -4,6 +4,7 @@ const storedUserInput = localStorage.getItem('userInput')
 const usernameInput = document.querySelector('#username');
 const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
+const backButton = document.querySelector('#back');
 
 let mode = 'dark';
 
@@ -18,6 +19,13 @@ themeSwitcher.addEventListener('click', function (){
     }
 });
 
-function redirectToHomePage() {
+function redirectToHomePage () {
     window.location.href = 'index.html';
 }
+
+backButton.addEventListener('click', function (event) {
+    event.preventDefault();
+    redirectToHomePage();
+})
+
+
