@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="container dark" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <div class="container dark">
+    <div>
         <header>
             <h1>My First Blog</h1>
-            <button onclick="redirectToHomePage()">Back</button>
+            <button id="back">Back</button>
             <div class="row toggle">
                 <div class="col">
                     <p>Dark Mode</p>
@@ -26,8 +26,10 @@
                 </div>
             </div>
         </header>
-
-
+    </div>
+    <div id="post">
+      
+        
     </div>
 
 </body>
@@ -37,10 +39,6 @@
         <a href="https://bryson987081.github.io/portfolio-challange/">My Portfolio</a>
     </nav>
     <script src="./assets/js/blog.js"></script>
-    <script> function redirectToHomePage() {
-            window.location.href = 'index.html';
-        }
-    </script>
 </footer>
 
 </html>
