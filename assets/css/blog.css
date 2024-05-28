@@ -1,11 +1,11 @@
 .dark {
-background-color: black;
-color: white;
+background-color: darkslategray;
+color: whitesmoke;
 }
 
 .light{
-background-color: white;
-color: black;
+background-color: whitesmoke;
+color: darkslategray;
 }
 
 .switch {
@@ -28,7 +28,7 @@ color: black;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: cadetblue;
+    background-color: rgb(64, 75, 75);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -66,4 +66,18 @@ input:checked + .slider:before {
 
 .col {
     margin: 20px;
+}
+
+.dark #post {
+border: solid whitesmoke;
+border-radius: 4px;
+margin: 10px;
+padding: 10px;
+}
+
+.light #post {
+border: solid darkslategray; 
+border-radius: 4px;  
+margin: 10px;
+padding: 10px;
 }
