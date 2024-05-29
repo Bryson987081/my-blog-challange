@@ -3,12 +3,13 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+For this challange we were prompted to create two differnt html pages.  The first page is used to submit blog post.  The second page is used to display submitted blog post.  The second page also needed to have a light and dark  mode button.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+## This was done by:
+
+- Storing the inputs in local storage
+- Creating html elements using JavaScript and then pulling the submissions from local storage and displaying them to the page.
+- The light and dark mode button was created by using JavaScript.  When the user switches the button the CSS of the page is updated.
 
 ![Blog Submission](./assets/images/My-Blog.png)
 
